@@ -34,6 +34,7 @@ def hello() -> str:
     logger.info("Child logger with trace Id.")
 
     return "Hello, World!"
+    return "This is from the new revision!"
 
 
 def shutdown_handler(signal_int: int, frame: FrameType) -> None:
