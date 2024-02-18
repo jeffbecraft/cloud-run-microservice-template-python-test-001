@@ -33,10 +33,8 @@ def hello() -> str:
     # https://cloud.google.com/run/docs/logging#correlate-logs
     logger.info("Child logger with trace Id.")
 
-    return "Hello, World!"
-    return "This is from the new revision!"
-
-
+    return "Hello, World!  Everything after Hello, World! is from the new revision I made from editing in GitHub"
+    
 def shutdown_handler(signal_int: int, frame: FrameType) -> None:
     logger.info(f"Caught Signal {signal.strsignal(signal_int)}")
 
